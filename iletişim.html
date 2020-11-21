@@ -71,15 +71,47 @@ margin-top: 20px;
     position: absolute;
     display:block;
 }
+    .dugme {
+   border-top: 1px solid #96d1f8;
+   background: #0d2636;
+   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#0d2636));
+   background: -webkit-linear-gradient(top, #000000, #0d2636);
+   background: -moz-linear-gradient(top, #000000, #0d2636);
+   background: -ms-linear-gradient(top, #000000, #0d2636);
+   background: -o-linear-gradient(top, #000000, #0d2636);
+   padding: 7px 14px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 24px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.dugme:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ffffff;
+   }
+.dugme:active {
+   border-top-color: #ffffff;
+   background: #ffffff;
+   color: #ffffff;
+   }
 @media screen and (max-width: 500px) {
   .column, .column.side {   
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
    .topnav a {
-    width: 190px;
-   }
+    width: 60%;
+       }
 }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,11 +121,11 @@ margin-top: 20px;
 <div class="header">
 <img src="resimler\logo.png">
 <div class="topnav">
-<a href="index.html">Anasayfa</a>
-<a href="hizmetlerimiz.html">Hizmetlerimiz</a>
-<a href="kurumsal.html">Kurumsal</a>
-<a href="kariyer.html">Kariyer</a>
-<a class="active" href="iletişim.html">İletişim</a>
+<a class="dugme" href="index.html">Anasayfa</a>
+<a class="dugme" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+<a class="dugme"href="kurumsal.html">Kurumsal</a>
+<a class="dugme"href="kariyer.html">Kariyer</a>
+<a class="dugme active" style="color:orange;"href="iletişim.html">İletişim</a>
 </div>
 
 <div class="row">
