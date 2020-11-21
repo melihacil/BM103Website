@@ -12,20 +12,18 @@ text-align: center;
 }
 .topnav {
 overflow: hidden;
-background-color: black;
-padding-left: 20px;
-position:sticky;
-    width: auto;
+background-color: #0c67a8;
+width: auto;
 }
 .topnav a {
 float: left;
 display: block;
 color: white;
-text-align: center;
-padding: 14px 114px;
+text-align: left;
+padding: 14px 80px;
 text-decoration: none;
-
 }
+
 .topnav a:hover {
 background-color: #ddd;
 color: black;
@@ -67,7 +65,18 @@ background-color: white;
 padding: 20px;
 margin-top: 20px;
 }
-    .dugme {
+@media screen and (max-width: 600px) {
+  .column, .column.side {   
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+   .topnav a {
+    width: 60%;
+    text
+       }
+}
+.dugme {
    border-top: 1px solid #96d1f8;
    background: #0d2636;
    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#0d2636));
@@ -99,16 +108,6 @@ margin-top: 20px;
    background: #ffffff;
    color: #ffffff;
    }
-@media screen and (max-width: 600px) {
-  .column, .column.side {   
-    width: 100%;
-  }
-}
-@media screen and (max-width: 600px) {
-   .topnav a {
-    width: 200px;
-   }
-}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
