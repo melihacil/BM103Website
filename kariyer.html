@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kariyer</title>
+<meta charset="utf-8">
+<style>
+body {background-color: #0c67a8;}
+.header {
+backgroundcolor: #f1f1f1;
+padding: 20px;
+text-align: center;
+}
+.topnav {
+overflow: hidden;
+background-color: black;
+padding-left: 5px;
+}
+.topnav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 114px;
+text-decoration: none;
+}
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+.footer {
+background-color: black;
+    bottom: 1px;
+    left: 1px;
+    width: 100%;
+    text-align: center;
+    height:64px; 
+    color: white;
+    }
+.column {
+  float: left;
+  width: 100%;
+  display: table;
+ 
+}
+.row:after {   
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+background-color: white;
+padding: 20px;
+margin-top: 20px;
+}
+input[type=text], select {
+  width: 300px;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  max-width: 20%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #d98c09;
+}
+@media screen and (max-width: 500px) {
+  .column, .column.side {   
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+   .topnav a {
+    width: 190px;
+   }
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="header">
+<img src="resimler\logo.png">
+<div class="topnav">
+<a href="index.html">Anasayfa</a>
+<a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+<a href="kurumsal.html">Kurumsal</a>
+<a href="kariyer.html">Kariyer</a>
+<a href="iletişim.html">İletişim</a>
+</div>
+
+<div class="row">
+ <div class="column">
+     <div class="card">
+      <h1>Mağazalarımız</h1>
+      <img src="resimler\magaza3.jpg" style="max-width: 100%;height: 300px;">
+      <img src="resimler\magaz.jpg" style="max-width: 100%;height: 300px;">
+      <p style="font-size: 18px;">Birçok ilimizde bulunan mağazalarımızda uygun çalışma saatleri ve maaşlar ile çalışanlarımıza iyi koşullar sağlamaktayız</p>
+      <h1>Servis Hizmetlerimiz</h1>
+      <img src="resimler\tamir.jpg" style="max-width: 100%;height: 300px;">
+      <img src="resimler\telefon.jpg" style="max-width: 100%;height: 300px;">
+      <p style="font-size: 18px">7/24 teknik destek ve tamir hizmetlerini sağlamaktayız.</p>
+      <h1>Bizimle Çalışmak İster Misiniz?</h1>
+      <form>
+  <label for="isim">İsim-Soyisim:</label><br>
+  <input type="text" id="isim" name="isim"><br>
+  <label for="bilgi">Kişisel Bilgiler:</label><br>
+  <input type="text" id="iletişim" name="iletişüm"><br>
+  İletişim Adresiniz:</label><br>
+  
+  <input type="text" id="fname" name="fname"><br>
+   <label for="bölüm">Çalışmak İstediğiniz Birim</label><br>
+   <select id="bölüm" name="Bölüm>
+      <option value="hizme">Müşleri Hizmetleri</option>
+      <option value="hizmet">Pazarlama-Satış</option>
+      <option value="destek">Tamir Destek</option>
+      <option value="hizme">Müşleri Hizmetleri</option>
+    </select>
+    <br>
+
+  <input type="submit" value="Gönder" onclick="alert ('Formunuzu Başarıyla Gönderdiniz!')">
+
+ </form> 
+</div>
+</div>
+
+</div>
+<div class="footer">
+<img src="resimler\komedi.png" style="width: 90px;height: 64px;float: left;"
+<p>© Copyright 2020 Made by Melih Açıl</p>
+<a href="https://tr-tr.facebook.com/" target="_blank"><img src="resimler\facebook.png" style="width:30px;height:30px;float: right;"></a>
+<a href="https://twitter.com/login?lang=tr" target="_blank"><img src="resimler\twitter.png" style="width:30px;height:30px;float: right;"></a>
+<a href="https://www.instagram.com/?hl=tr" target="_blank"><img src="resimler\innstagram.png" style="width:30px;height:30px;float: right;"></a>
+<a href="https://tr.linkedin.com/" target="_blank"><img src="resimler\linkedin.png" style="width:30px;height:30px;float: right;"></a>
+</div>
+</body>
+</html>
